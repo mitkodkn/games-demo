@@ -1,0 +1,17 @@
+README.private.md
+
+coverage/
+node_modules/
+npm-debug.log
+.nyc_output
+lib
+lib_test
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+.idea
