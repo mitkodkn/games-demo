@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/mitkodkn/games-lol.git"
+    "url": "git+ssh://git@github.com/mitkodkn/games-demo.git"
   },
   "author": "Doonloo Ltd.",
   "keywords": [],
