@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "module": "commonjs",
     "moduleResolution": "node",
     "lib": [
       "esnext"
     ],
-    "target": "es2015",
-    "strict": true,
+    "target": "es6",
+    "noImplicitAny": false,
     "outDir": "./lib",
     "preserveConstEnums": true,
     "removeComments": true,

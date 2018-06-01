@@ -1,18 +1,21 @@
 import { GameUnit, IGameUnit, IGameUnitConfig } from '@gamegains/kit';
+import { DemoQuality, SpeechQuality } from '../unit-parameters';
 
-export class Argument extends GameUnit implements IGameUnit {
+export class Defense extends GameUnit implements IGameUnit {
   // noinspection TsLint
   private static GAME_UNIT_CONFIG: IGameUnitConfig = {
-    name: 'Argument',
+    name: 'Defense',
+
     description: 'Main unit in ELSYS defenses',
-    parameters: [],
+
+    parameters: [new SpeechQuality(), new DemoQuality()],
   };
 
   constructor() {
-    super(Argument.GAME_UNIT_CONFIG);
+    super(Defense.GAME_UNIT_CONFIG);
   }
 
   public calculateScore(): Promise<number> {
-    return Promise.resolve(0.1);
+    return Promise.resolve(0.5);
   }
 }

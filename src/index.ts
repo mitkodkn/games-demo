@@ -8,7 +8,7 @@ import {
   IGameConfig,
 } from '@gamegains/kit';
 
-import { Argument } from './units/argument';
+import { Defense } from './units/defense';
 
 export default class ElsysDefenses extends Game implements IGame {
   private static readonly GAME_CONFIG: IGameConfig = {
@@ -24,7 +24,7 @@ export default class ElsysDefenses extends Game implements IGame {
     developerKey: 'vtLF993sVqHFHN6W9z5c',
     developerSecret: 'M690prZo8nguTUuOAQygr52wSMvcwKO91lg9LsvU',
 
-    gameUnits: [new Argument()],
+    gameUnits: [new Defense()],
 
     authTypes: [],
 
