@@ -7,6 +7,8 @@ import {
 export class DemoQuality extends UnitParameter implements IUnitParameter {
   // noinspection TsLint
   private static readonly UNIT_PARAMETER_CONFIG: IUnitParameterConfig = {
+    id: 'demoQuality',
+
     name: 'Demo Quality',
 
     description: 'Quality of demo quality',

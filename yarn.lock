@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@gamegains/kit@0.0.3-7":
-  version "0.0.3-7"
-  resolved "https://registry.yarnpkg.com/@gamegains/kit/-/kit-0.0.3-7.tgz#0d827a51205756fd698578682dc9d8616811843d"
+"@gamegains/kit@0.0.3-9":
+  version "0.0.3-9"
+  resolved "https://registry.yarnpkg.com/@gamegains/kit/-/kit-0.0.3-9.tgz#66ef051132352d97470ee51286a7e0440e4cbe3d"
   dependencies:
     clime "^0.5.9"
     inquirer "^4.0.1"

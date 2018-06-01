@@ -6,9 +6,11 @@ import {
   IAuthResult,
   IGame,
   IGameConfig,
+  IGameUnit,
 } from '@gamegains/kit';
 
 import { Defense } from './units/defense';
+import { DemoQuality } from './unit-parameters';
 
 export default class ElsysDefenses extends Game implements IGame {
   private static readonly GAME_CONFIG: IGameConfig = {
@@ -48,5 +50,17 @@ export default class ElsysDefenses extends Game implements IGame {
 
   public async verifyPlayer(): Promise<IAuthResult> {
     return new AuthResult(AuthStatus.SUCCESS, 'Успешен достъп до защита!');
+  }
+
+  public getLatestUnits(gameUnit: IGameUnit): Promise<IGameUnit[]> {
+    const defense1 = new Defense();
+    defense1.setParameterValue('speechQuality', 5);
+    defense1.setParameterValue('demoQuality', 10);
+
+    const defense2 = new Defense();
+    defense2.setParameterValue('speechQuality', 10);
+    defense2.setParameterValue('demoQuality', 10);
+
+    return Promise.resolve([defense1, defense2]);
   }
 }

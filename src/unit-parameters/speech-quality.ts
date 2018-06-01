@@ -7,6 +7,8 @@ import {
 export class SpeechQuality extends UnitParameter implements IUnitParameter {
   // noinspection TsLint
   private static readonly UNIT_PARAMETER_CONFIG: IUnitParameterConfig = {
+    id: 'speechQuality',
+
     name: 'Speech Quality',
 
     description: 'Quality of speech argument',
